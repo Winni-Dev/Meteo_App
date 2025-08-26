@@ -189,6 +189,9 @@ const ProfileImage = styled.img`
 `;
 
 const ThemeToggle = styled.button`
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -222,24 +225,27 @@ const ThemeToggle = styled.button`
   }
 
   @media (max-width: 768px) {
-    width: 32px;
-    height: 32px;
-    font-size: 0.9rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
     bottom: 8px;
     right: 8px;
   }
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
-    width: 28px;
-    height: 28px;
-    font-size: 0.8rem;
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
     bottom: 5px;
     right: 5px;
   }
 `;
 
 const MessageButton = styled.button`
+width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -273,18 +279,18 @@ const MessageButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    width: 32px;
-    height: 32px;
-    font-size: 0.9rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
     bottom: 8px;
     left: 8px;
   }
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
-    width: 28px;
-    height: 28px;
-    font-size: 0.8rem;
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
     bottom: 5px;
     left: 5px;
   }
@@ -458,11 +464,15 @@ const TimeNumber = styled.span`
 
   @media (max-width: 768px) {
     font-size: clamp(2.5rem, 12vw, 3.5rem);
+    text-shadow: none !important;
   }
-
+    @media (max-width: 480px) {
+  text-shadow: none !important;
+  }
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(2rem, 8vw, 2.5rem);
+    text-shadow: none !important;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -485,11 +495,16 @@ const TimeSeparator = styled.span`
 
   @media (max-width: 768px) {
     font-size: clamp(2.5rem, 12vw, 3.5rem);
+    text-shadow: none !important;
+  }
+    @media (max-width: 480px) {
+  text-shadow: none !important;
   }
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(2rem, 8vw, 2.5rem);
+    text-shadow: none !important;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -514,11 +529,15 @@ const Seconds = styled.span`
     font-size: clamp(0.9rem, 3vw, 1.2rem);
     margin-bottom: 0.3rem;
   }
+    @media (max-width: 480px) {
+  text-shadow: none !important;
+  }
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(0.8rem, 2vw, 1rem);
     margin-bottom: 0.2rem;
+    text-shadow: none !important;
   }
 `;
 
