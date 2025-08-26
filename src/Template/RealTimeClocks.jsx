@@ -455,10 +455,8 @@ const TimeNumber = styled.span`
   color: ${({ darkMode }) => (darkMode ? '#00a8ff' : '#222')};
   line-height: 1;
   animation: ${fadeIn} 0.3s ease-out, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
-  text-shadow: ${({ darkMode }) =>
-    darkMode 
-      ? '0 0 5px rgba(0, 168, 255, 0.5), 0 0 10px rgba(0, 168, 255, 0.4)' 
-      : 'none'};
+  
+  
   transition: color 0.3s ease, text-shadow 0.3s ease;
   font-variant-numeric: tabular-nums;
 
