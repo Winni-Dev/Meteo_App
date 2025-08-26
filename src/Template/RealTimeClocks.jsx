@@ -457,21 +457,17 @@ const TimeNumber = styled.span`
   animation: ${fadeIn} 0.3s ease-out, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
   
 
-  background: none;
-   transition: color 0.3s ease, text-shadow 0.3s ease;
+  background: transparent;
   font-variant-numeric: tabular-nums;
 
   @media (max-width: 768px) {
     font-size: clamp(2.5rem, 12vw, 3.5rem);
-    text-shadow: none ;
   }
     @media (max-width: 480px) {
-  text-shadow: none;
   }
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(2rem, 8vw, 2.5rem);
-    text-shadow: none ;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -488,19 +484,16 @@ const TimeSeparator = styled.span`
   background: none;
   animation: ${pulse} 1s infinite, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
   
-
+  background: transparent;
   @media (max-width: 768px) {
     font-size: clamp(2.5rem, 12vw, 3.5rem);
     text-shadow: none ;
   }
-    @media (max-width: 480px) {
-  text-shadow: none ;
-  }
+
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(2rem, 8vw, 2.5rem);
-    text-shadow: none ;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -525,15 +518,12 @@ const Seconds = styled.span`
     font-size: clamp(0.9rem, 3vw, 1.2rem);
     margin-bottom: 0.3rem;
   }
-    @media (max-width: 480px) {
-  text-shadow: none !important;
-  }
+    
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(0.8rem, 2vw, 1rem);
     margin-bottom: 0.2rem;
-    text-shadow: none !important;
   }
 `;
 
