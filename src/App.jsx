@@ -6,6 +6,8 @@ import Yasmine from './Clients/Yasmine'
 import Garcon from './Clients/Garcon'
 import Winni from './Clients/Winni';
 import Charo from './Clients/Charo';
+// Redeploy Vercel SPA
+
 
 function App() {
 
