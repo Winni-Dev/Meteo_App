@@ -1,13 +1,24 @@
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { useState } from 'react'
 import './App.css'
 import RealTimeClock from './RealTimeClock'
+import Yasmine from './Clients/Yasmine'
+import Garcon from './Clients/garcon'
+import Winni from './Clients/Winni';
+import Charo from './Clients/Charo';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-     <RealTimeClock/>
+      <Routes>
+        <Route path='/' element={<Winni/>} />
+        <Route path='/Yayou' element={<Yasmine/>} />
+        <Route path='/Garcon' element={<Garcon/>} />
+        <Route path='/Charo' element={<Charo/>} />
+      </Routes>
+     {/* <RealTimeClock/> */}
     </div>
   )
 }
