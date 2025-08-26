@@ -722,8 +722,8 @@ const CloseButton = styled.button`
       : 'rgba(0, 0, 0, 0.1)'};
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -742,9 +742,9 @@ const CloseButton = styled.button`
 
   @media (max-width: 768px) {
     top: 12px;
-    right: 12px;
-    width: 28px;
-    height: 28px;
+    right: 18px;
+    width: 36px;
+    height: 36px;
   }
 
   /* Mode paysage pour téléphone */
@@ -753,7 +753,7 @@ const CloseButton = styled.button`
     right: 10px;
     width: 25px;
     height: 25px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 `;
 
