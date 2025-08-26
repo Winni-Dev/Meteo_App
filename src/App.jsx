@@ -3,12 +3,11 @@ import { useState } from 'react'
 import './App.css'
 import RealTimeClock from './RealTimeClock'
 import Yasmine from './Clients/Yasmine'
-import Garcon from './Clients/garcon'
+import Garcon from './Clients/Garcon'
 import Winni from './Clients/Winni';
 import Charo from './Clients/Charo';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
