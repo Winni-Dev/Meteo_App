@@ -456,21 +456,22 @@ const TimeNumber = styled.span`
   line-height: 1;
   animation: ${fadeIn} 0.3s ease-out, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
   
-  
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  background: none;
+   transition: color 0.3s ease, text-shadow 0.3s ease;
   font-variant-numeric: tabular-nums;
 
   @media (max-width: 768px) {
     font-size: clamp(2.5rem, 12vw, 3.5rem);
-    text-shadow: none !important;
+    text-shadow: none ;
   }
     @media (max-width: 480px) {
-  text-shadow: none !important;
+  text-shadow: none;
   }
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(2rem, 8vw, 2.5rem);
-    text-shadow: none !important;
+    text-shadow: none ;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -484,25 +485,22 @@ const TimeSeparator = styled.span`
   color: ${({ darkMode }) => (darkMode ? '#00a8ff' : '#444')};
   margin: 0 0.3rem;
   line-height: 1;
+  background: none;
   animation: ${pulse} 1s infinite, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
-  text-shadow: ${({ darkMode }) =>
-    darkMode 
-      ? '0 0 5px rgba(0, 168, 255, 0.5)' 
-      : 'none'};
-  transition: color 0.3s ease;
+  
 
   @media (max-width: 768px) {
     font-size: clamp(2.5rem, 12vw, 3.5rem);
-    text-shadow: none !important;
+    text-shadow: none ;
   }
     @media (max-width: 480px) {
-  text-shadow: none !important;
+  text-shadow: none ;
   }
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
     font-size: clamp(2rem, 8vw, 2.5rem);
-    text-shadow: none !important;
+    text-shadow: none ;
   }
 
   @media (prefers-reduced-motion: reduce) {
