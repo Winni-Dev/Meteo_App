@@ -24,6 +24,12 @@ dist-ssr
 *.sw?
 .env 
 
+
+box-shadow: ${({ darkMode }) =>
+    darkMode 
+      ? '0 0 40px rgba(0, 168, 255, 0.4), inset 0 0 20px rgba(0, 168, 255, 0.1)' 
+      : '0 0 20px rgba(0,0,0,0.1)'};
+
 text-shadow: ${({ darkMode }) =>
     darkMode 
       ? '0 0 5px rgba(0, 168, 255, 0.5), 0 0 10px rgba(0, 168, 255, 0.4)' 
@@ -36,3 +42,5 @@ text-shadow: ${({ darkMode }) =>
       ? '0 0 5px rgba(0, 168, 255, 0.5)' 
       : 'none'};
   transition: color 0.3s ease;
+
+

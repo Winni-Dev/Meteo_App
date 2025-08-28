@@ -355,10 +355,8 @@ const ClockContainer = styled.div`
   width: fit-content;
   width: 90vh;
   max-width: 90vw;
-  box-shadow: ${({ darkMode }) =>
-    darkMode 
-      ? '0 0 40px rgba(0, 168, 255, 0.4), inset 0 0 20px rgba(0, 168, 255, 0.1)' 
-      : '0 0 20px rgba(0,0,0,0.1)'};
+  
+  
   transition: all 0.5s ease;
   position: relative;
   display: flex;
