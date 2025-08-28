@@ -237,14 +237,14 @@ const ThemeToggle = styled.button`
       : 'rgba(0, 0, 0, 0.2)'};
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   color: ${({ darkMode }) => darkMode ? '#00ffea' : '#444'};
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
   box-shadow: ${({ darkMode }) => 
     darkMode 
@@ -261,18 +261,18 @@ const ThemeToggle = styled.button`
   }
 
   @media (max-width: 768px) {
-    width: 32px;
-    height: 32px;
-    font-size: 0.9rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
     bottom: 8px;
     right: 8px;
   }
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
-    width: 28px;
-    height: 28px;
-    font-size: 0.8rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
     bottom: 5px;
     right: 5px;
   }
@@ -288,14 +288,14 @@ const MessageButton = styled.button`
       : 'rgba(0, 0, 0, 0.2)'};
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   color: ${({ darkMode }) => darkMode ? '#00ffea' : '#444'};
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
   box-shadow: ${({ darkMode }) => 
     darkMode 
@@ -312,18 +312,18 @@ const MessageButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    width: 32px;
-    height: 32px;
-    font-size: 0.9rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
     bottom: 8px;
     left: 8px;
   }
 
   /* Mode paysage pour téléphone */
   @media (max-height: 500px) and (orientation: landscape) {
-    width: 28px;
-    height: 28px;
-    font-size: 0.8rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
     bottom: 5px;
     left: 5px;
   }
@@ -488,7 +488,7 @@ const TimeNumber = styled.span`
   font-weight: 700;
   color: ${({ darkMode }) => (darkMode ? '#00a8ff' : '#222')};
   line-height: 1;
-  animation: ${fadeIn} 0.3s ease-out, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
+  animation: ${fadeIn} 0.3s ease-out;
   text-shadow: ${({ darkMode }) =>
     darkMode 
       ? '0 0 5px rgba(0, 168, 255, 0.5), 0 0 10px rgba(0, 168, 255, 0.4)' 
@@ -516,7 +516,7 @@ const TimeSeparator = styled.span`
   color: ${({ darkMode }) => (darkMode ? '#00a8ff' : '#444')};
   margin: 0 0.3rem;
   line-height: 1;
-  animation: ${pulse} 1s infinite, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
+  animation: ${pulse} 1s infinite;
   text-shadow: ${({ darkMode }) =>
     darkMode 
       ? '0 0 5px rgba(0, 168, 255, 0.5)' 
