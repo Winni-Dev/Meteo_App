@@ -355,8 +355,11 @@ const ClockContainer = styled.div`
   width: fit-content;
   width: 90vh;
   max-width: 90vw;
-  
-  
+
+  box-shadow: ${({ darkMode }) =>
+    darkMode 
+      ? '0 0 40px rgba(0, 168, 255, 0.4), inset 0 0 20px rgba(0, 168, 255, 0.1)' 
+      : '0 0 20px rgba(0,0,0,0.1)'};
   transition: all 0.5s ease;
   position: relative;
   display: flex;
@@ -452,7 +455,8 @@ const TimeNumber = styled.span`
   font-weight: 700;
   color: ${({ darkMode }) => (darkMode ? '#00a8ff' : '#222')};
   line-height: 1;
-  animation: ${fadeIn} 0.3s ease-out, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
+  animation: ${fadeIn} 0.3s ease-out;
+  
   
 
   background: transparent;
@@ -480,7 +484,7 @@ const TimeSeparator = styled.span`
   margin: 0 0.3rem;
   line-height: 1;
   background: none;
-  animation: ${pulse} 1s infinite, ${({ darkMode }) => darkMode ? css`${neonPulse} 3s infinite` : 'none'};
+  animation: ${fadeIn} 0.3s ease-out;
   
   background: transparent;
   @media (max-width: 768px) {
